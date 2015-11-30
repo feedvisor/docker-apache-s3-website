@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat << EOF > /etc/apache2/sites-enabled/feedvisor-com.conf
+cat << EOF > /etc/apache2/sites-enabled/$VHOST_NAME.conf
 <VirtualHost *:80>
         ServerName $VHOST_NAME
         ServerAlias www.$VHOST_NAME
